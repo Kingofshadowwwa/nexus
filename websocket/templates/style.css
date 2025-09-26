@@ -1,0 +1,226 @@
+body{
+    position:fixed;
+    background: darkslategray;
+    margin:0px;
+}
+.body{
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at center, #4E5754 80%, #52595d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    font-family: monospace;
+    color: rgb(248, 248, 255);
+    display: flex;
+    box-shadow: 0px 0px 5px 0px rgba(66, 39, 137, 0.8);
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    background: #252323;
+    height: 40vh;
+    width: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+.cont-img{
+    left: -60%;
+    position: absolute;
+    width: 250vh;
+    height: 200vh;
+    background: #1C1C1C;
+    transform: rotate(120deg);
+    z-index: 1;
+}
+.img_background{
+    z-index: 0;
+    height: 100vh;
+}
+.loginsting{
+    display: flex;
+    flex-direction: column;
+}
+.input_12{
+    width: 30vh;
+    margin: 1vh;
+}
+.man_clock{
+    margin: 1vh;
+}
+.verefication{
+    padding:10px;
+    margin: 10 px;
+    height: 3vh;
+    background: red;
+    border: none;
+    border-radius: 4px;
+}
+@font-face{
+    font-family: 'Family 8-bit';
+    src: url('/static/8-BitDisintrest-Regular.otf') format('otf')
+}
+.main_menu{
+    color: white;
+    border-radius: 4px;
+    margin: 2%;
+    width: 190vh;
+    background: rgba(28, 28, 28, 0.8);
+    height: 95vh;
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0);
+    display: flex;
+}
+.main_frends {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0);
+    border-radius: 7px;
+    margin: 1%;
+    width: 44vh;
+    background: rgba(20, 15, 11, 0.7);
+    height: 97%;
+}
+.main_chat {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0);
+    border-radius: 7px;
+    margin: 1%;
+    width: 100%;
+    background: rgba(20, 15, 11, 0.7);
+    height: 97%;
+}
+.display-logo {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0);
+    border-radius: 7px;
+    margin: 5%;
+    width: 90%;
+    background: rgba(20, 15, 11, 0.7);
+    height: 24%;
+}
+.img {
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 60px;
+    margin-bottom: -10px;
+    width: 55%;
+}
+.stra {
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: 3px;
+}
+.frends {
+    display:flex;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0);
+    border-radius: 7px;
+    margin: 5%;
+    width: 90%;
+    background: rgba(20, 15, 11, 0.7);
+    height: 13%;
+}
+.imgg {
+    border-radius: 20px;
+    margin: 10px;
+    width: 9vh;
+    display: block; /* важно для box-shadow */
+}
+.frend_name {
+    font-size: 30px;
+}
+.friend-card {
+    display: flex;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    margin: 5%;
+    width: 90%;
+    background: rgba(20, 15, 11, 0.7);
+    height: 13%;
+    align-items: center;
+}
+div#chat {
+    height: 70vh;
+    width: 100vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    justify-content: flex-end;
+}
+input.input_chat {
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    height: 5vh;
+    width: 120vh;
+}
+.placeholder {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+div#incomingCall {
+    width: 78%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0);
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img#callImg {
+    margin: 10px;
+    border-radius: 30px;
+    width: 15%;
+}
+p#callerName {
+    font-family: monospace;
+    font-size: 25px;
+}
+.but_call {
+    border-radius: 10px;
+    border:none;
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+}
+button#acceptCall {
+    background: green;
+}
+button#declineCall {
+    background: red;
+}
+.button {
+    margin:10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background: rgba(0, 0, 0, 0.7);
+    height: 50px;
+    width: 100px;
+}
+.cont_reg {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+form.reg_form {
+    display: flex;
+}
+
+/* ===== Пульсирующее зеленое свечение ===== */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 8px 4px rgba(0, 255, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.4);
+  }
+}
+
+.online-glow {animation: pulse-glow 3s infinite; outline: 2px solid rgba(0,255,0,0.6); }
+

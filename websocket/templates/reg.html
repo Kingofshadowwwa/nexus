@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <div class="cont-img"></div>
+        <img class="img_background" src="/static/gif1-2.gif">
+        <div style=" padding: 10px;" class="cont"><form method="post" action="/reg_in" class="reg_form"><div class="cont_reg"><img id="img1" style="box-shadow: 0px 0px 30px 0px red;
+    margin: 10px;
+    border-radius: 20px;
+    width: 200px;" src="/static/avatars/avatars.png">
+            <h2>Выберите аватарку</h2>
+            <input id="myImg" type="file" name="img">
+        </div><div class="cont_reg"><h1>Введите логин</h1><input name="login">
+            <h2>Введите пароль</h2><input name="password">
+        <h2>Ведите почту</h2><input name="email"> <button style="margin:30px;" class="verefication">Зарегестрироваться</button></div>
+        </form></div>
+        <script>
+            myImg.onchange = function(event) {
+    var target = event.target;
+
+    if (!FileReader) {
+        alert('FileReader не поддерживается — облом');
+        return;
+    }
+
+    if (!target.files.length) {
+        alert('Ничего не загружено');
+        return;
+    }
+
+    var fileReader = new FileReader();
+
+    fileReader.onload = function(){
+    img1.src = fileReader.result;}
+
+    fileReader.readAsDataURL(target.files[0]);
+}
+        </script>
+</body>
+</html>

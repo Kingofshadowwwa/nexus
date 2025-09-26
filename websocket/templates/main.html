@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_menu"><div class="main_frends"><div class="display-logo"><img src="{{avatars}}" class="img"><p id="name" class="stra">{{name}}</p></div><div id="frends"> </div></div><div class="main_chat">  <div id="incomingCall" style="display:none;">
+        <img id="callImg" src='' class="img_call">
+    <p id="callerName"></p>
+    <div id="Button_start"><button class="but_call" id="acceptCall">Принять</button>
+    <button class="but_call" id="declineCall">Отклонить</button>
+    </div>
+  </div>
+        <div class="chat_chat" id="chat"></div><div class="placeholder"><input id="chatinput" class="input_chat"><div><button id="btnchat" data-user="" class="button">Отправить</button><button id="btnCall" data-user='' class="button">Позвонить</button></div></div></div></div>
+    <script src="/static/script.js"></script>
+    <script src="/static/webrtc.js"></script>
+    <audio id="localAudio" autoplay muted></audio>
+    <audio id="remoteAudio" autoplay></audio>
+</body>
+</html>
